@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Inventory Map</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+
+<header>
+	<div class="bg-img">
+		<nav class="nav-headerbar">
+			<div class="nav-logodiv">
+				<a href="index.html" id="nav-logo">CENGIS</a>
+			</div>
+			<ul class="menu-list">
+				<li class="menu-item">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="menu-item">
+					<a href="aboutus.html">About Us</a>
+				</li>
+				<li class="menu-item">
+					<a href="ppa.html">Potential Planting Area</a>
+				</li>
+				<li class="menu-item">
+					<a href="tree_suggestion.html">Tree Species Suggestion</a>
+				</li>
+				</li>
+				<li class="menu-item">
+					<a class="active" href="tree_inventory.html">Tree Inventory</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class = "aboutustext">
+	<h1>Tree Inventory Map of the City of Peterborough</h1>
+
+	<p>
+		This product is an interactive web map of trees in the City of Peterborough designed for public use.
+	</p>
+
+	<p>
+		The product is configured with major reference to ArcGIS
+		Maps SDK for JavaScript Version 4.29, and also some reference to external sources such as sample
+		codes for Cascading Style Sheets (CSS).
+	</p>
+	<h2>Main functions</h2>  <!--Subtitle-->
+	<p>Check out our product, our ArcGIS StoryMaps or the descriptions below for a tour of its features!</p>
+	<div class="button-container">
+		<button class="button-64" role="button" onclick=" window.open('ptbo_treeinventory.html','_blank')">
+			<span class="text">The Product</span></button>
+		<button class="button-64" role="button" onclick=" window.open('https://arcg.is/1f9a091','_blank')">
+			<span class="text">ArcGIS StoryMaps</span></button>
+	</div>
+</div>
+
+<div class="gridlayout">
+	<div class="gridelement sectionparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">Feature 1: Popup Information for Individual Trees</h2>
+			<p>
+				Zoom in and click on any tree to access information like status, common name, and location!
+			</p>
+		</div>		
+	</div>
+	<div class="gridelement">
+		<div class="imgblock">
+			<img class="imgProject" src="images/d3popup.gif" alt="Demonstration of Tree Popup">
+		</div>
+	</div>
+</div>
+<div class="gridlayout">
+	<div class="gridelement">
+		<div class="imgblock">
+			<img class="imgProject" src="images/d3sql.gif" alt="Demonstration of Tree Filter">
+		</div>
+	</div>
+	<div class="gridelement sectionparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">Feature 2: Tree Status Selector</h2>
+			<p>
+				Users can select a particular status of trees to display in the map.
+				This function is constructed by Structured Query Language (SQL). 
+			</p>
+		</div>		
+	</div>
+</div>
+<div class="gridlayout">
+	<div class="gridelement sectionparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">Feature 3: Tree Zone Statistics</h2>
+			<p>
+				Zoom out and click on any tree zone to look at the five most common species of that zone.
+				The numbers change dynamically based on the tree status selection.			
+			</p>
+		</div>		
+	</div>
+	<div class="gridelement">
+		<div class="imgblock">
+			<img class="imgProject" src="images/treezone.gif" alt="Demonstration of Tree Zone Statistics">
+		</div>
+	</div>
+</div>
+
+<div class = "aboutustext">
+	<h2>Source</h2>
+	<p>
+		Tree Inventory and Tree Zone data obtained from the City of Peterborough.
+	</p>
+
+	<h2>Other Design Elements</h2>
+	<p>
+		Responsive webpage design, customized loading screen, how-to-use modal button and useful widgets.
+	</p>
+
+	<h2>Limitation</h2>
+	<p>
+		Due to data security and privacy concerns, the potential planting area data layer created in 
+		this project cannot	be incorporated into this product.
+	</p>
+
+	<h2>Recommendation</h2>
+	<p>
+		If time allows, the popup information for individual trees can include links 
+		to more information, photos, or other useful information for the public.
+	</p>
+</div>
+
+</body>
+</html>

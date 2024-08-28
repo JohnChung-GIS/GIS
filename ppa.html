@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Potential Planting Area Analysis</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+
+<header>
+	<div class="bg-img">
+		<nav class="nav-headerbar">
+			<div class="nav-logodiv">
+				<a href="index.html" id="nav-logo">CENGIS</a>
+			</div>
+			<ul class="menu-list">
+				<li class="menu-item">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="menu-item">
+					<a href="aboutus.html">About Us</a>
+				</li>
+				<li class="menu-item">
+					<a class="active" href="ppa.html">Potential Planting Area</a>
+				</li>
+				<li class="menu-item">
+					<a href="tree_suggestion.html">Tree Species Suggestion</a>
+				</li>
+				</li>
+				<li class="menu-item">
+					<a href="tree_inventory.html">Tree Inventory</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class = "aboutustext">  <!--Follow class "aboutustext" css-->
+	<h1>Spatial Analysis of<br>Potential Planting Areas</h1>  <!--Title-->
+
+	<p>
+		In order to achieve the goal of overall tree canopy cover of 35% by 2051, it is of utmost importance to understand
+		and visualize the potentially suitable tree planting areas to help make informed decisions about tree planting. The goal 
+		of the team is to accurately identify potential planting areas in the City of Peterborough with a detailed delineation
+		of geographic attributes.
+	</p>
+	<p>
+		A series of spatial analyses were performed to generate layers of potential planting areas.
+	</p>
+	<h2>GIS Software</h2>
+	<p>
+		ArcGIS Pro is the primary GIS software used.
+	</p>
+</div>
+
+<!--Create a div containing 2 columns of equal width-->
+<div class="gridlayout">
+	<div class="gridelement sectionparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">Data Used in Spatial Analysis</h2>
+			<p>
+				Three major types of spatial data were used in the spatial analysis of Potential Planting Areas:
+			</p>
+			<ul>
+				<li>Vector Data</li>
+				<li>LiDAR Data</li>
+				<li>Georeferenced Aerial Imagery</li>
+			</ul>
+			<p>
+				Selected above-ground and underground utilities, infrastructure and physical structures that 
+				prohibit tree planting in a location, were identified and defined as conflicts. Some examples are 
+				overhead powerlines, roads, existing trees, streetlights, hydrants, sanitary systems, storm management 
+				systems, etc. 
+			</p>
+		</div>		
+	</div>
+	<div class="gridelement">
+		<div class="imgblock">
+			<img class="imgProject" src="images/ppa_data.png" alt="Data Used in Spatial Analysis">
+		</div>
+	</div>
+</div>
+
+<div class="gridlayout">
+	<div class="gridelement">
+		<div class="imgblock">
+			<img class="imgProject" src="images/ppa_workflow.png" alt="Workflow of Potential Planting Area Analysis">
+		</div>
+	</div>
+	<div class="gridelement sectionparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">Spatial Anaylsis Workflow</h2>
+			<p>
+				The major analysis phases are as follows:
+			</p>
+			<ol>
+				<li>Reprojecting data</li>
+				<li>Clipping to study area extent</li>
+				<li>Extract a suitable base layer for further analysis</li>
+				<li>Creating buffered areas for selected above-ground and underground conflicts</li>
+				<li>Erasing conflicts from the base layer</li>
+				<li>Classifying land ownership</li>
+				<li>Delineating areas suitable for different sizes of trees</li>
+				<li>Enriching layers with salt spray tolerance and zoning information</li>
+				<li>Analyzing statistical results</li>
+			</ol>
+		</div>		
+	</div>
+</div>
+
+<div class="gridlayout">
+	<div class="gridelement sectionparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">ArcGIS Pro Toolbox & Models</h2>
+			<p>
+				Alongside the spatial analysis, a series of models were created within a custom toolbox in ArcGIS Pro
+				to record the complete workflow and geoprocessing tools used for data preprocessing, data processing, 
+				and spatial analysis. The toolbox and models allow the client to rerun the PPA analysis with new datasets
+				in the future as needed.
+			</p>
+		</div>		
+	</div>
+	<div class="gridelement">
+		<div class="imgblock">
+			<img class="imgProject" src="images/ppa_model.png" alt="ArcGIS Pro Toolbox Model">
+		</div>
+	</div>
+</div>
+
+<div class="gridlayout">
+	<div class="gridelement">
+		<div class="imgblock">
+			<img class="imgProject" src="images/ppa_result.png" alt="Attributes of Potential Planting Areas">
+		</div>
+	</div>
+	<div class="gridelement sectionparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">Attributes of Potential Planting Areas</h2>
+			<p>
+				Features within the resulting potential planting area layers have a wide range of attributes about
+				land ownership, suitability for tree sizes, salt spray tolerance, and zoning information.
+			</p>
+		</div>		
+	</div>
+</div>
+
+<div class = "aboutustext">
+	<h2>Outcomes</h2>
+	<h3>
+		Privately-owned Potential Planting Areas
+	</h3>
+	<div class="gridelement">
+		<div class="imgblock">
+			<img class="imgProject" src="images/ppa_result_map.png" alt="Private PPA">
+		</div>
+	</div>
+</div>
+
+<div class = "aboutustext">
+	<h2>What's Next?</h2>
+	<p>
+		The resulting potential planting area layers would serve as an updated baseline study on the extent of available 
+		planting sites within the city boundaries. They would also be the stepping stone for the client to develop tree 
+		planting programs. 
+	</p>
+	<p>
+		In addition, the potential planting area layers were combined with a tree species database in an interactive 
+		web mapping application. That application suggests the most suitable tree species to plant when a potential planting
+		area is selected. Check it out <a href="tree_suggestion.html">here</a>!
+	</p>
+</div>
+
+</body>
+</html>
